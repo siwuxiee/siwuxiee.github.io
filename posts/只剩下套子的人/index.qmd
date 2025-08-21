@@ -6,9 +6,11 @@ date: '2025-03-07'
 categories:
 - 梦话
 ---
-![](/images/dream/空雨衣.png)
 
-<!--more-->
+<figure style="text-align: center;">
+  <img src="空雨衣.png" alt="一座空雨衣的青銅雕塑" style="width: 60%;">
+  <figcaption>空雨衣</figcaption>
+</figure>
 
 # 应然与实然的争辩
 讨论社会问题时，总是可以听到两种论调，一种是“社会应该如何如何，明明可以如何如何”；而另一种想必也是显然的，就是“社会就是如何如何，要尊重现实如何如何”。倘若讨论的双方还有些体面，大抵也不会沦落到互相质问“你以为你是谁”的地步。
