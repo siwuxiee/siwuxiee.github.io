@@ -1,4 +1,4 @@
-# _quarto.yml 的最终黄金配置 (已修正 lang 位置)
+# _quarto.yml 的最终正确配置
 project:
   type: website
 
@@ -13,22 +13,22 @@ website:
         text: "关于"
 
   search: true
-  # --- 评论功能的完整配置 ---
+  
+  # --- 评论功能的修正后配置 ---
   comments:
     giscus:
       repo: siwuxiee/siwuxiee.github.io
-      repo-id: "R_kgDOPhjITg"             # <--- 需要替换
-      category: "Announcements"         # 确保这是您选择的分类名
-      category-id: "DIC_kwDOPhjITs4CuaXy" # <--- 需要替换
+      repo-id: "R_kgDOPhjITg"             # 请确认这是您自己的ID
+      category: "Announcements"
+      category-id: "DIC_kwDOPhjITs4CuaXy" # 请确认这是您自己的ID
       mapping: "pathname"
-      reactions-enabled: "1"
-      emit-metadata: "0"
+      reactions-enabled: true             # 已从 "1" 修正为 true
       theme: "preferred_color_scheme"
-      lang: "zh-CN"
+      # 无效的 emit-metadata 和 lang 选项已被移除
   # --- 配置结束 ---
 
 format:
   html:
     theme: cosmo
-    lang: zh-CN  # <--- lang 的正确位置在这里
+    lang: zh-CN
     css: styles.css
