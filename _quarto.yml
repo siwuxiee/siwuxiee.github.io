@@ -13,6 +13,19 @@ website:
         text: "关于"
 
   search: true
+  # --- 评论功能的完整配置 ---
+  comments:
+    giscus:
+      repo: siwuxiee/siwuxiee.github.io
+      repo-id: "R_kgDOPhjITg"             # <--- 需要替换
+      category: "Announcements"         # 确保这是您选择的分类名
+      category-id: "DIC_kwDOPhjITs4CuaXy" # <--- 需要替换
+      mapping: "pathname"
+      reactions-enabled: "1"
+      emit-metadata: "0"
+      theme: "preferred_color_scheme"
+      lang: "zh-CN"
+  # --- 配置结束 ---
 
 format:
   html:
