@@ -2,6 +2,10 @@
 project:
   type: website
 
+editor:
+  render-on-save: true
+  preview-mode: file
+  
 website:
   title: "思无邪的博客"
   site-url: "https://siwuxiee.github.io"
