@@ -1,0 +1,9 @@
+---
+title: 迁移
+author: 思无邪
+draft: false
+date: '2025-08-20'
+categories:
+- 日常
+---
+明天大概会把博客从hexo架构换成Quarto架构，希望能顺利。主要的麻烦在于如何把这写旧的博客迁移过去。

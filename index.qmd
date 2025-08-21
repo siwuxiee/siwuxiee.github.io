@@ -1,0 +1,13 @@
+---
+title: "只是一些正确的废话和个人的偏见"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+

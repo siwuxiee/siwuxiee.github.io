@@ -1,0 +1,21 @@
+# _quarto.yml 的最终黄金配置 (已修正 lang 位置)
+project:
+  type: website
+
+website:
+  title: "思无邪的博客"
+  site-url: "https://siwuxiee.github.io"
+  description: "只是一些正确的废话和个人的偏见"
+  
+  navbar:
+    right:
+      - href: about.qmd
+        text: "关于"
+
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    lang: zh-CN  # <--- lang 的正确位置在这里
+    css: styles.css
