@@ -1,5 +1,5 @@
 ---
-title: "只是一些正确的废话和个人的偏见"
+title: "思无邪的博客"
 listing:
   contents: posts
   sort: "date desc"
