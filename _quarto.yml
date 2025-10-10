@@ -12,9 +12,9 @@ website:
   description: "只是一些正确的废话和个人的偏见"
   
   navbar:
-    right:
-      - href: about.qmd
-        text: "关于"
+    #right:
+    #  - href: about.qmd
+    #    text: "关于"
 
   search: true
   
