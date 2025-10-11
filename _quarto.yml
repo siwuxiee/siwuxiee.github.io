@@ -11,7 +11,7 @@ website:
   site-url: "https://siwuxiee.github.io"
   description: "只是一些正确的废话和个人的偏见"
   
-  navbar:
+  navbar: {}
     #right:
     #  - href: about.qmd
     #    text: "关于"
