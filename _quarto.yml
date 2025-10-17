@@ -10,6 +10,7 @@ website:
   title: "只是一些正确的废话和个人的偏见"
   site-url: "https://siwuxiee.github.io"
   description: "只是一些正确的废话和个人的偏见"
+  date-format: "YYYY-MM-DD HH:mm"
   
   navbar: {}
     #right:
