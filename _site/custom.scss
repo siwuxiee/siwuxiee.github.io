@@ -1,0 +1,62 @@
+/* custom.scss */
+
+// 1. 从 Google Fonts 导入 Noto Serif SC (思源宋体)
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+// 2. 定义一个全局的字体栈 (font stack)
+// 这是你网站的基础字体设置，通常会选择一个优秀的英文字体。
+// Quarto 的默认主题字体就很好，我们可以在它的基础上进行扩展。
+// 如果你想指定一个特定的英文字体，可以取消下面这行的注释，例如：
+// @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  // 设置一个基础的英文字体。'sans-serif' 是一个通用的无衬线字体。
+  // 如果你导入了特定的英文字体（如 Lato），可以把它放在最前面。
+  // font-family: 'Lato', sans-serif;
+}
+
+
+// 3. 【核心步骤】使用 @font-face 规则，仅对中文字符应用思源宋体
+// 我们将已经加载的 'Noto Serif SC' 字体重新定义，并告诉浏览器它只适用于特定的 Unicode 范围。
+
+// -- 常规体 (400) --
+@font-face {
+  font-family: 'Chinese Font'; // 给它起一个自定义名字
+  src: local('Noto Serif SC'), local('NotoSerifSC-Regular'), url('https://fonts.gstatic.com/s/notoserifsc/v23/H4chBXePl9DZ0Xe7gG9cyOj7afa43_Ba27o.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  // 指定 Unicode 范围，覆盖绝大部分简体和繁体中文字符
+  unicode-range: U+2E80-U+2EFF, U+3000-U+303F, U+31C0-U+31EF, U+3200-U+32FF, U+3300-U+33FF, U+3400-U+4DBF, U+4E00-U+9FFF, U+F900-U+FAFF, U+FF00-U+FFEF;
+}
+
+// -- 粗体 (700) --
+@font-face {
+  font-family: 'Chinese Font';
+  src: local('Noto Serif SC Bold'), local('NotoSerifSC-Bold'), url('https://fonts.gstatic.com/s/notoserifsc/v23/H4ciBXePl9DZ0Xe7gG9cyOj7H7-B-b82W2Ed1g.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+2E80-U+2EFF, U+3000-U+303F, U+31C0-U+31EF, U+3200-U+32FF, U+3300-U+33FF, U+3400-U+4DBF, U+4E00-U+9FFF, U+F900-U+FAFF, U+FF00-U+FFEF;
+}
+
+
+// 4. 将我们自定义的“中文专用字体”添加到全局字体列表的最前面
+// 这样浏览器在渲染时，会优先检查是否是中文字符，如果是，就应用 'Chinese Font' (即思源宋体)。
+// 如果是英文字母或数字，就会跳过它，使用后面的字体。
+html, body {
+  font-family: 'Chinese Font', // 我们自定义的中文专用字体
+               -apple-system,   // 以下是 Quarto 默认或常见的高质量系统字体
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               "Helvetica Neue",
+               Arial,
+               sans-serif,
+               "Apple Color Emoji",
+               "Segoe UI Emoji",
+               "Segoe UI Symbol";
+}
+
+// 确保标题也继承这个设置
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit; // 继承 body 的字体设置
+}

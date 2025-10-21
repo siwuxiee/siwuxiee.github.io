@@ -1,1 +1,18 @@
-/* css styles */
+/* styles.css - 网络字体最终版 */
+
+/* 1. 从 Google Fonts 导入 Noto Serif SC (思源宋体) Regular 和 Bold 字重 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+/* 2. 将 Noto Serif SC 设置为网站的主要字体 */
+/* 浏览器会优先使用 Noto Serif SC。如果加载失败，则会依次尝试后面的备用字体。*/
+body {
+  font-family: 'Noto Serif SC', /* 优先使用我们从 Google Fonts 加载的网络字体 */
+               "Songti SC",     /* 如果网络字体失败，在 macOS 上尝试使用系统宋体 */
+               "SimSun",        /* 在 Windows 上尝试使用系统宋体 */
+               serif;           /* 如果以上都没有，使用浏览器默认的衬线字体 */
+}
+
+/* 3. 确保标题也使用这个字体设置 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit; /* 继承来自 body 的字体设置 */
+}
