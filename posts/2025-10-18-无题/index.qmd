@@ -8,14 +8,14 @@ categories: [日常]
 今天早上去图书馆的路上发现因为长时间的下雨，树干上都长满了青苔。
 
 <figure style="text-align: center;">
-  <img src="长满青苔的树.jpg" alt="长满青苔的树。" style="width:60%;">
+  <img src="长满青苔的树.png" alt="长满青苔的树。" style="width:60%;">
   <figcaption>图 1: 街道旁的树木。</figcaption>
 </figure>
 
 叶子也变黄了。
 
 <figure style="text-align: center;">
-  <img src="黄叶.jpg" alt="黄叶。" style="width:60%;">
+  <img src="黄叶.png" alt="黄叶。" style="width:60%;">
   <figcaption>图 2: 黄叶。</figcaption>
 </figure>
 
