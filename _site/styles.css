@@ -16,3 +16,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: inherit; /* 继承来自 body 的字体设置 */
 }
+
+/* 统一修改博客列表页和文章内页的元数据字体 */
+.listing-date,
+.listing-author,
+.metadata {
+  font-family: inherit !important;
+}
