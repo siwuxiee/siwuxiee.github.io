@@ -12,7 +12,7 @@ categories: [日常]
 最近西安天气还不错，除了前几天早上突然有大雾(10月30日)，我头一次见到那么大的雾，但到中午就散了。
 
 <figure style="text-align: center;">
-  <img src="大雾.HEIC" alt="超级大雾。" style="width:60%;">
+  <img src="大雾.jpg" alt="超级大雾。" style="width:80%;">
   <figcaption>图 1: 大雾</figcaption>
 </figure>
 

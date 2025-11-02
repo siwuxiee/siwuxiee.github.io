@@ -8,7 +8,7 @@
 
 <meta name="author" content="思无邪">
 
-<title>国庆刷机有感（续） – 只是一些正确的废话和个人的偏见</title>
+<title>无题 – 只是一些正确的废话和个人的偏见</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -94,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">国庆刷机有感（续）</h1>
+      <h1 class="title">无题</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">日常</div>
               </div>
@@ -114,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">发布于</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2025年10月22日 19:42</p>
+        <p class="date">2025年10月26日 22:42</p>
       </div>
     </div>
     
@@ -133,14 +162,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>上次我反思，觉得刷机没给我带来多少好处。但在换回 MIUI 并使用了二十几天后，我发现自己显然错了，刷机是有好处的。</p>
-<p>自从换回 MIUI，手机虽然没有了突然重启、音频播放异常之类的恶性 Bug，但我忘了这个系统无处不在的小毛病有多烦人。</p>
-<p>首先是响应迟钝。打开一个软件，总要延迟一秒左右才能进入，体感非常缓慢。其次是触控失灵，我明明点击右下角的应用，结果却打开了左上角的，而且这种“点错”的频率比以前高了不少。最让人恼火的是打字卡顿——打字这个操作很消耗计算资源吗？我常常是输入了三四个字之后，系统才像突然反应过来一样，把字一个个“突突突”地显示出来（我开启了打字振动）。同时，触控失灵的问题也蔓延到了键盘上，打一个 “L” 能识别成 “A”，简直离谱。</p>
-<p>但这些都只是铺垫，真正让我破防到需要再写一篇博客来说这个事的原因，是我突发奇想去测试 MIUI 能否通过 Google 的设备完整性（Device Integrity）验证。结果发现，它同样无法通过。</p>
-<p>这个发现瞬间让我破大防了。我之前在 LineageOS 上为了通过这个测试折腾了半天，先入为主地以为像招商银行这类国内应用，通不过验证就无法使用。现在才明白，国内的软件生态压根就不看这个！我之前的一切努力显得无比可笑。</p>
-<p>尽管如此，短时间内我也不会换回 LineageOS 了。眼下最重要的是备战数学竞赛，刷机的事，或许可以等到11月9号之后再说。《资治通鉴》也等到那之后再读吧。</p>
-<p>话说回来最近西安天气够冷的，像冬天一样。</p>
-<p>以上。</p>
+<p>疲劳的周末。</p>
+<p>昨天晚上做了个非常奇怪的梦，但是现在忘了，早上醒着的时候是记得的，要不然就可以写<strong>记梦</strong>了。</p>
+<p>今天好累啊，知识工程的作业弄了一天，因为老师发的文档里面很多内容过期了，还有一些就是单纯的错误。导致环境配了一上午。作业又完成了一下午。今天<code>Gemini</code>不知道发什么癫，生成的<span class="math inline">\(\LaTeX\)</span>代码一直是错的，还出了很多次<code>bug</code>。</p>
+<p>整整弄了一天啊。我的数学啊，还有两周就考了，我还得抓紧弄数学竞赛。下周五还要去摆自行车，因为西电的美妙的现代版“连坐”制度，大宿舍卫生不好导致四好宿舍不达标，就整个宿舍都毕不了业，更别提保研了。所以只好去摆自行车来让自己的四号宿舍达标。西电的政策真是太唐了。</p>
+<p>好累，就这样吧，晚安。</p>
 
 
 
