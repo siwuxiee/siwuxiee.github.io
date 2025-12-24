@@ -8,7 +8,7 @@
 
 <meta name="author" content="思无邪">
 
-<title>古德哈特定律 – 只是一些正确的废话和个人的偏见</title>
+<title>实验好多呜呜 – 只是一些正确的废话和个人的偏见</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -94,10 +123,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">古德哈特定律</h1>
+      <h1 class="title">实验好多呜呜</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">经济学</div>
-                <div class="quarto-category">梦话</div>
+                <div class="quarto-category">日常</div>
+                <div class="quarto-category">记梦</div>
               </div>
                   </div>
   </div>
@@ -115,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">发布于</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2025年08月25日 21:01</p>
+        <p class="date">2025年12月11日 23:14</p>
       </div>
     </div>
     
@@ -134,18 +163,19 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>为什么有些事情，不适合有明确的规则？</p>
-<p>我今天偶然读到了一个定律，叫“古德哈特定律”（Goodhart’s Law），解释了许多我之前一直没想通的困惑。</p>
-<p>这定律的核心思想是：当一个指标成为一个目标时，它就不再是一个好的指标。</p>
-<p>我们似乎都有一种朴素的期待：为什么很多事情不能制定出清晰的规则呢？如果规则明确，大家就能在同一个框架下公平竞争，这难道不是最高效、最公正的方式吗？</p>
-<p>但现实远非如此。一旦某个规则或指标被确立为终极目标，事情就开始走样。我们先不谈那些处心积虑钻漏洞的人，只说大多数的普通参与者。人们的注意力会不自觉地从“做成这件事的真正目的”转移到“如何让这个指标看起去更漂亮”上。</p>
-<p>渐渐地，大家会沉浸在如何“刷”高指标的竞争中，甚至被环境裹挟着，不得不加入这场数字游戏。此时，我们最初想要达成的那个真正目的，早已被抛之脑后。</p>
-<p>每当这种情况发生，我们总会习惯性地抱怨：“这规则没设计好，考虑得不周全。”</p>
-<p>但古德哈特定律点醒了我：问题可能并不出在规则本身。很多指标在设计之初，看起来天衣无缝，逻辑自洽。可一旦它成为所有人都盯着的目标，它的有效性就会被参与者自己“刷”坏。</p>
-<p>一个最典型的例子就是高考命题。很多人抱怨高考题型总在变，觉得自己好不容易把一种题型练得滚瓜烂熟，考试风向却突然变了，感觉很不“公平”。</p>
-<p>但从“反古德哈特”的角度看，高考恰恰需要不断变换题型。</p>
-<p>为什么？因为这种变化，正是为了筛选掉那些把“刷题”当作“外挂”，试图绕过真正能力培养的应试者。当然，我不是说刷题不好，必要的练习是巩固知识的基石。但凡事过犹不及，一旦“刷题”异化为像衡水中学那样，以军事化管理追求极致应试技巧的模式，教育的本质——启发心智、培养独立思考能力——就被彻底遗忘了。</p>
-<p>所以，很多事情之所以不能有“一劳永逸”的明确规则，正是因为任何一个固定的指标，都可能成为人们“攻击”和“操纵”的目标，最终让整个系统偏离了它本来的航向。为了无限接近真正的目标，规则的制定者，有时不得不选择“在路上”的动态调整。</p>
+<p>今晚去做了集成电路实验，身心俱疲，做完只觉得好累。</p>
+<p>最近托老爸买了个电动刮胡刀，花了188元。说实话挺贵的，但从使用体验上来说，感觉不出什么特别之处，好在做工确实不错，算是唯一的安慰吧。</p>
+<p>昨晚做了一个怪梦，可以说是荒诞至极。</p>
+<p>我梦见在大街上溜达，竟撞见了<span class="math inline">\(l\)</span>同学 的恋人<span class="math inline">\(z\)</span>同学。当时她西装革履，正和另一位同样西装革履的人谈笑风生。我自然像高中时那样，充满尊敬地喊了一声：“<span class="math inline">\(l\)</span>嫂好！” 她也笑眯眯地回了一句：“你好。”</p>
+<p>我没当回事，继续往前走。突然，背后传来巨浪般的怒吼声叫我的名字。回头一看，<span class="math inline">\(z\)</span>同学居然以气吞山河之势向我冲来，那速度感觉比旁边的汽车还快！</p>
+<p>我虽然莫名其妙，但本能让我拔腿就跑。我边跑边回头喊：“我做什么了让你这么愤怒？” 结果得到的答案简直离谱——因为我刚才只跟她打了招呼，没跟她旁边那位打招呼，导致那位领导很不爽，把原本快谈成的生意搞黄了！</p>
+<p>我心想这也太冤了吧！但根本来不及悲哀，看她那架势，被追上恐怕要碎尸万段，我只能拼命往家跑。</p>
+<p>跑到楼下时遇到了邻居阿姨，我匆匆打了个招呼正想上楼，结果不知怎么（似乎是跑的时候碰坏了东西），那位阿姨瞬间化身邪恶巫女！她腾云驾雾，呼风唤雨，双眼放出闪电，也飞在半空中开始追杀我。</p>
+<p>我大感倒霉，只好“过家门而不入”。心想得往人多的地方跑，这么明显的巫女，肯定会有人报警救我。于是我又折返往街上跑。凭借对小区地形的熟悉，我成功绕路避开了<span class="math inline">\(z\)</span>同学的正面拦截，但她俩依然在后面穷追不舍。</p>
+<p>当我气喘吁吁跑到街上，却发现路人们全都无动于衷！我心想完了，怎么都跟瞎子一样？有人在飞啊！眼睛还放闪电呢！ 我边跑边绝望地大喊救命。</p>
+<p>就在这时，一位慈祥的老婆婆出现了，温和地问我遇到了什么困难。我哭诉正被那两人追杀。谁知这老婆婆竟不是凡人，直接化身一位神仙，瞬间剥夺了她们的神力！</p>
+<p>我直呼得救了……后面的内容就没什么印象了。</p>
+<p>晚安</p>
 
 
 

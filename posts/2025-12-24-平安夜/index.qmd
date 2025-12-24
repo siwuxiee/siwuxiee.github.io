@@ -1,0 +1,19 @@
+---
+title: "平安夜！"
+author: "思无邪"
+date: "2025-12-24 23:01"
+categories: [日常]
+---
+
+今天是平安夜！我微信头像换上了之前用AI生成的圣诞装束版，是下面这个样子：
+
+<div style="text-align: center;">
+  <img src="1.jpg" alt="圣诞版猫头鹰" width="60%" style="border-radius: 5px;">
+  <p style="color: gray; font-size: 0.9em;">圣诞版头像</p>
+</div>
+
+很可爱呢。
+
+今天心情还不错，可能是节日的影响。
+
+晚安
