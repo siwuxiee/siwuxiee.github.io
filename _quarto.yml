@@ -33,6 +33,7 @@ website:
 
 format:
   html:
+    include-in-header: password_protect.html
     theme: cosmo
     lang: zh-CN
     css: styles.css
