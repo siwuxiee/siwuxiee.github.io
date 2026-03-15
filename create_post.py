@@ -50,11 +50,11 @@ def main():
     # 检查 posts 文件夹是否存在，不存在则创建
     if not os.path.exists(POSTS_DIRECTORY):
         os.makedirs(POSTS_DIRECTORY)
-        print(f"📁 已创建 '{POSTS_DIRECTORY}' 資料夾。")
+        print(f"📁 已创建 '{POSTS_DIRECTORY}' 资料夾。")
 
     # 检查目标文章文件夹是否已存在，避免重复
     if os.path.exists(full_dir_path):
-        print(f"❌ 错误：資料夾 '{full_dir_path}' 已经存在。")
+        print(f"❌ 错误：资料夾 '{full_dir_path}' 已经存在。")
         sys.exit(1)
 
     # 创建文章文件夹
@@ -76,8 +76,8 @@ categories: []
     with open(qmd_file_path, 'w', encoding='utf-8') as f:
         f.write(qmd_content)
 
-    print("✅ 成功創建文章！")
-    print(f"   文章位於: {qmd_file_path}")
+    print("✅ 成功创建文章！")
+    print(f"   文章位于: {qmd_file_path}")
 
 if __name__ == "__main__":
     main()

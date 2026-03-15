@@ -1,0 +1,14 @@
+---
+title: "平凡的一天"
+author: "思无邪"
+date: "2026-03-15 22:34"
+categories: [日常]
+---
+
+今天创建好了docker环境，安装好了插件，Linux编程体验确实好。明天配置vibe coding。
+
+我今天刚知道原来PyTorch在Linux上有amd的版本，下次试试，在Linux上还是安装miniconda好了，anaconda太大了。
+
+明天开始写爱情的博客了。
+
+晚安
