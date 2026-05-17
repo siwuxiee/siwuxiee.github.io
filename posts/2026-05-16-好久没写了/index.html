@@ -8,7 +8,7 @@
 
 <meta name="author" content="思无邪">
 
-<title>一月份居然快过去了 – 只是一些正确的废话和个人的偏见</title>
+<title>好久没写了 – 只是一些正确的废话和个人的偏见</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -118,6 +118,35 @@ ul.task-list li input[type="checkbox"] {
 })();
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -143,9 +172,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">一月份居然快过去了</h1>
+      <h1 class="title">好久没写了</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">日常</div>
+                <div class="quarto-category">记梦</div>
               </div>
                   </div>
   </div>
@@ -163,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">发布于</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2026年01月31日 21:06</p>
+        <p class="date">2026年05月16日 11:21</p>
       </div>
     </div>
     
@@ -182,11 +212,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>一月份快过去了，好快啊。感觉什么也没干。</p>
-<p>明天开始写关于爱情哲学的博客，同时启动CS50Web的学习。</p>
-<p>最近看完了散人的《海市蜃楼之馆》实况。总体观感尚可，虽在我心中未达“神作”高度，但也值得一看。庆幸是圆满结局，否则我大概率会“破防”。这不禁让我想到《红楼梦》，那样伟大的作品却是悲剧收场，实在令人唏嘘。似乎伟大的文学往往伴随着悲剧内核，难道真是“文章憎命达”？人类似乎天生对悲剧情有独钟，就像我的博客，似乎也总是记录那些令我不悦之事。</p>
-<p>但如果未来谈恋爱了，我定要以此为戒，转而记录情感中的美好事迹。只是需警惕将这份记录异化——如果它变成了KPI式的考核，甚至成为吵架时博弈的筹码（“例如本月美好指数下降24%”），反倒不如不记。</p>
-<p>加油，希望二月一切都好。</p>
+<p>最近学校游泳馆开了，本想今天去体验一下，结果外面下起了大雨，而且我发现之前的泳裤也找不到了，只好作罢。在翻找的过程中，我意外找到了以前的厚手套，不过夏天都到了，谁还会戴它呢？</p>
+<p>昨天午睡时，我做了一个奇怪的“梦中梦”。在梦里，我先是“醒”了过来，还以为自己已经午睡起床了，但其实依然在梦中。环顾四周，房间明明是我家的布局，但在梦里我却理所当然地认为这是宿舍。此时，室友<span class="math inline">\(z\)</span>正在玩我的电脑，窗外下着大雨，天色十分阴沉。</p>
+<p>见我醒了，他叫我一起玩游戏。那是一款看起来有些恐怖的 2D 双人游戏，画风只有纯粹的黑白灰。游戏的主角是一对兄妹，在危机四伏的森林里探险。我操控着“妹妹”在森林里走了一分钟左右，就觉得太瘆得慌，不想继续玩了。于是，我提议玩小时候玩过的《Q版泡泡堂7》里的抢旗子大战。</p>
+<p>正当我们准备换游戏时，突然听说我爸妈要回来了，遂赶忙收起电脑，作学习状。就在这时，我突然意识到不对劲：为什么我家里会有室友呢？大惊，发觉自己身处梦境，于是连忙惊醒。醒来后，我第一反应是以为睡过头要迟到了，结果翻看课表发现根本没课，这才彻底放下心来，下床去忙自己的事情了。</p>
 <p>以上。</p>
 
 
