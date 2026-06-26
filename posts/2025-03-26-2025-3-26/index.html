@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,9 +10,6 @@
 
 <title>2025-3-26 – 只是一些正确的废话和个人的偏见</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -40,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-94b323657c735dfe3b1bf6ebb2c33a55.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,55 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "搜索"
   }
 }</script>
-<style id="page-lock">
-  body { display: none !important; }
-</style>
-
-<script>
-(function() {
-    var password = "14315163"; // 【请修改这里填你的密码】
-    var storageKey = 'quarto-blog-auth';
-
-    // 定义一个“开锁”函数：移除隐藏样式，把页面显示出来
-    function unlockPage() {
-        var lockStyle = document.getElementById('page-lock');
-        if (lockStyle) {
-            lockStyle.remove(); // 移除 CSS，页面恢复正常显示
-        }
-        document.body.style.display = ''; // 确保 Body 属性复原
-    }
-
-    // 逻辑开始
-    var savedPassword = localStorage.getItem(storageKey);
-
-    if (savedPassword === password) {
-        // A. 如果本地已经存了正确密码 -> 直接开锁
-        unlockPage();
-    } else {
-        // B. 如果没有密码 -> 弹窗询问
-        // 注意：此时页面依然是 display: none (全白) 的状态
-        var input = prompt("请输入访问密码:");
-
-        if (input === password) {
-            // 密码正确 -> 存下来，并开锁
-            localStorage.setItem(storageKey, password);
-            unlockPage();
-        } else {
-            // 密码错误 -> 弹窗提示
-            alert("密码错误！即将离开页面。");
-            
-            // 【关键修改】不要 reload，而是直接跳走，或者就这样保持全白
-            // 方案 A：跳转到空白页 (最安全)
-            window.location.href = "about:blank"; 
-            
-            // 方案 B：或者你想让它一直白着也行，什么都不做，反正 CSS 还在生效
-        }
-    }
-})();
-</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../custom.scss">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -240,14 +191,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
