@@ -4,7 +4,7 @@ author: 思无邪
 draft: false
 date: '2025-03-10'
 categories:
-- 梦话
+- 一段思考
 ---
 品味，名词，众多烦恼中的一个
 

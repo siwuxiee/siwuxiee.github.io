@@ -4,7 +4,7 @@ author: 思无邪
 draft: false
 date: '2025-03-09'
 categories:
-- 梦话
+- 一段思考
 ---
 今天讨论标题里的三个名词。
 <!--more-->
